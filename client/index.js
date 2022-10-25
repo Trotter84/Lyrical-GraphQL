@@ -5,7 +5,7 @@ import {
   ApolloClient,
   ApolloProvider
 } from '@apollo/client';
-import SongList from './components/SongList';
+import GetSongs from './components/SongList';
 
 
 const client = new ApolloClient({
@@ -15,7 +15,7 @@ const client = new ApolloClient({
 const Root = () => {
   return (
     <ApolloProvider client={client}>
-      <SongList />
+      <GetSongs />
     </ApolloProvider>
   );
 };
